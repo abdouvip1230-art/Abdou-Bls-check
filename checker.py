@@ -86,7 +86,6 @@ def is_security_verification(page_text: str) -> bool:
     """Detect access checks and stop rather than attempting to bypass them."""
     text = page_text.lower()
     markers = (
-        "unusual activity detected",
         "requires verification",
         "verify you are human",
         "captcha",
